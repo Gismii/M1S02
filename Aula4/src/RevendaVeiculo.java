@@ -5,36 +5,27 @@ public class RevendaVeiculo {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Qual modelo?: ");
         String veiculo = scanner.next();
-        String decisão = scanner.next();
+        //String moto = scanner.next();
+        //String veiculoDois = scanner.next();
+
 
         switch (veiculo) {
             case "hatch":
                 System.out.println("Temos esse modelo sim.! Vamos fechar acompra? ");
-
-                switch (decisão) {
+                String decisao = scanner.next();
+                switch (decisao) {
                     case "sim":
                         System.out.print("Compra efetuado com sucesso!!");
+                        break;
+                    case"motoca":
+                        System.out.print("Não trabalhamos com esse modelo!");
+                        break;
+                    case "nao":
+                        System.out.print("volte sempre!! ");
                         break;
 
 
                 }
-
-                    case "seda":
-                    System.out.println("Todos foram vendidos ontem, podemos resevar a proxima frota se preferir!");
-                    switch (decisão) {
-                        case "sim":
-                            System.out.print("Reserva realizada");
-                            break;
-                        case "4x4":
-                            System.out.println("Não temos no momento!");
-                            break;
-                        default:
-                            System.out.println("Não trabalhamos com esse modelo. Viste nosso site: https://github.com/Gismii");
-
-
-                    }
-                }
-            }
         }
-
-
+    }
+}
