@@ -31,7 +31,7 @@ public class Stacks {
                         "Kubernetes\n");
 
                 break;
-            case "DevOps":
+            case "Cloud":
                 System.out.print("AWS\n" +
                         "Azure\n");
 
